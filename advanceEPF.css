@@ -99,9 +99,10 @@ nav {
 }
 
 #personal-logo {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height:60px;
   filter: invert(1);
+  border-radius: 30px;
 }
 
 .social__list {
@@ -123,14 +124,44 @@ nav {
   border-radius: 50%;
 }
 
+.fa-envelope{
+  font-size: 32px;
+}
+
+.scroll {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .scroll__icon{
-    width: 20px;
-    height: 30px;
-    border: 2px solid #242424;
-    border-radius: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 20px;
+  height: 30px;
+  border: 2px solid #242424;
+  border-radius: 24px;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.scroll__icon:after{
+  content: "";
+  width: 4px;
+  height: 6px;
+  background-color: #242424;
+  animation: scroll 1000ms infinite alternate-reverse;
+}
+
+@keyframes scroll {
+  0%{
+    transform: translateY(3px);
+  }
+  100%{
+    transform: translateY(-3px);
+  }
 }
 
     .mail__btn {
