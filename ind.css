@@ -24,6 +24,18 @@ section {
   transition: all 300ms ease;
 }
 
+.click{
+  transition: all 300ms ease ;
+}
+
+.click:hover {
+transform: scale(1.1);
+}
+
+.click:active {
+  transform: scale(0.8);
+}
+
 /*
 
 LANDING PAGE
